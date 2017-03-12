@@ -1,0 +1,19 @@
+{
+  "name": "web-pack",
+  "version": "1.0.0",
+  "description": "just a learning repo .",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zigang93/web-pack-tutorial.git"
+  },
+  "author": "zi gang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zigang93/web-pack-tutorial/issues"
+  },
+  "homepage": "https://github.com/zigang93/web-pack-tutorial#readme"
+}
