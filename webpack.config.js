@@ -4,7 +4,15 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: 'dist',
-    filename: './dist/app.bundle.js'
+    filename: 'app.bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'css-loader' ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
