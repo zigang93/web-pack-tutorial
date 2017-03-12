@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "prod": "webpack -p --watch"
+    "prod": "npm run clean && webpack -p",
+    "clean": "rimraf ./dist/*"
   },
   "repository": {
     "type": "git",
