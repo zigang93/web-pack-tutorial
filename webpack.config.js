@@ -25,26 +25,31 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: 'babel-loader'
-      }  
+      },
+
+      {
+        test: /\.pug$/,
+        use: ['html-loader', 'pug-html-loader']
+      }
+ 
 
     ]
   },
   devServer: {
       contentBase: path.join(__dirname, "dist"),
       compress: true,
-      port: 9000,
       stats: "errors-only",
       open: true
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack Tutorial Project!!',
-      minify: {
-        collapseWhitespace : true
-      },
+      // title: 'Webpack Tutorial Project!!',
+      // minify: {
+      //   collapseWhitespace : true
+      // },
       hash: true,
       excludeChunks: ['contact'],
-      template: './src/index.ejs',
+      template: './src/index.pug',
     }),
 
     new HtmlWebpackPlugin({
